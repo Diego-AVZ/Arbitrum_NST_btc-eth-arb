@@ -15,7 +15,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 
 contract GenesisIndex is ERC20Upgradeable, OwnableUpgradeable, PausableUpgradeable, ChainId, NGISplitter {
-    event Mint(address indexed from, uint256 wbtcIn, uint256 wethIn, uint256 indexed amount);
+    event Mint(address indexed from, uint256 wbtcIn, uint256 wethIn, ArbIn, uint256 indexed amount);
     event Burn(address indexed from, uint256 usdcIn, uint256 indexed amount);
 
     /// @custom:oz-upgrades-unsafe-allow constructor
